@@ -695,3 +695,17 @@ git_repository(
     commit = "efabf7cb7e63b7466f79e9171907ed1e746ef1a3",
     remote = "https://android.googlesource.com/platform/tools/netsim",
 )
+
+git_repository(
+    name = "breakpad",
+    remote = "https://github.com/google/breakpad.git",
+    commit = "ff252ff6faf5e3a52dc4955aab0d84831697dc94",
+    build_file = "@//:BUILD.breakpad.bazel",
+)
+
+git_repository(
+    name = "linux-syscall-support",
+    remote = "https://chromium.googlesource.com/linux-syscall-support",
+    commit = "ed31caa60f20a4f6569883b2d752ef7522de51e0",
+    build_file = "@//:BUILD.linux-syscall-support.bazel",
+)

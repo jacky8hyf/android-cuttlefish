@@ -1,0 +1,10 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+cc_library(
+    name = "third_party_lss",
+    hdrs = [
+        "lss/linux_syscall_support.h",
+    ],
+    include_prefix = "third_party",
+    visibility = ["@breakpad//:__subpackages__"],
+)
